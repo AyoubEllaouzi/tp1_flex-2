@@ -1,0 +1,147 @@
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  position: relative;
+}
+
+header img {
+  width: 100%;
+  height: 400px;
+}
+
+.searchBox {
+  background-color: rgb(226, 223, 223);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#searchPart {
+  display: flex;
+  align-items: center;
+}
+
+#searchPart button:first-of-type,
+#searchPart input[type="text"] {
+  margin-left: 30px;
+}
+
+#searchPart button:first-of-type {
+  margin-right: 30px;
+}
+
+.searchBox h1 {
+  margin-bottom: 10px;
+}
+
+main h1:first-of-type {
+  color: gray;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  padding: 20px;
+}
+
+.cartItem {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-style: groove;
+}
+
+.cartImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+}
+
+span {
+  color: red;
+}
+/* Footer Styles */
+footer {
+  background-color: rgb(90, 92, 89);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-title{
+  color: black;
+}
+
+.footerCarts1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+}
+
+.footerItem {
+  width:20%; 
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.footerCarts2 {
+  color: white;
+ background-color: black;
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ padding-left: 20px;
+}
+
+
+.footerCarts2 p {
+  color: white;
+ background-color: black;
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+}
+@media (max-width: 768px) {
+  .searchBox {
+      width: 80%;
+  }
+
+  .cartItem {
+      width: 50%;
+  }
+
+  .footerItem {
+      width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchBox {
+      width: 90%;
+  }
+
+  .cartItem {
+      width: 100%;
+  }
+
+  .footerItem {
+      width: 50%;
+  }
+}
